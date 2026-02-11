@@ -7,6 +7,7 @@
     Try changing "table" to "view" below
 */
 
+
 {{ config(materialized='table') }}
 
 with source_data as (
@@ -16,6 +17,7 @@ with source_data as (
     select null as id
 
 )
+
 
 select *
 from source_data
