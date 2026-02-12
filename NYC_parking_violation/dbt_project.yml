@@ -38,9 +38,9 @@ models:
       +materialized: view
     silver:
       silver_parking_violation_codes:
-        +materialized: view
+        +materialized: ephemeral
       silver_parking_violations:
-        +materialized: view
+        +materialized: ephemeral
       silver_violation_tickets:
         +materialized: view
       silver_violation_vehicles:
