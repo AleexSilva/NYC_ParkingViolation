@@ -9,6 +9,7 @@ sql_query = '''
     SHOW TABLES
 '''
 
+
 with duckdb.connect('../data/nyc_parking_violation.db') as con:
     display(con.sql(sql_query).df())
     
